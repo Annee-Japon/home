@@ -1,0 +1,9 @@
+$body-color: slateblue;
+
+@import "./heading";
+
+body {
+  color: $body-color;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
