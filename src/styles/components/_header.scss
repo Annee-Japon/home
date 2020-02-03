@@ -1,0 +1,14 @@
+@import "../variables";
+@import "../helpers";
+
+header {
+  @extend %full-height;
+  color: map-get($theme-foreground, text-contrast);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-weight: normal;
+  }
+}

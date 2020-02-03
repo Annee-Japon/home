@@ -1,9 +1,29 @@
-$body-color: slateblue;
+@import "./variables";
 
 @import "./heading";
 
+@import "./components/header";
+@import "./components/sections";
+@import "./components/carousel";
+
+html {
+  font-size: 10px;
+}
+
 body {
-  color: $body-color;
+  color: map-get($theme-foreground, text-contrast);
   font-family: "Roboto", sans-serif;
   margin: 0;
+  font-size: $default-fz;
+  background: map-get($theme-background, background);
+}
+
+.container {
+  overflow-y: auto;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+
+  > * {
+    scroll-snap-align: start;
+  }
 }

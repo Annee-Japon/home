@@ -1,0 +1,26 @@
+@import "../variables";
+@import "../helpers";
+
+.carousel {
+  margin: auto;
+  margin-top: $spacing * 4;
+
+  $slide-width: 70vw;
+  $slide-height: 70vh;
+
+  overflow-x: auto;
+  width: $slide-width;
+  height: $slide-height;
+  display: flex;
+  scroll-snap-type: x mandatory;
+
+  .slide {
+    background: grey;
+    flex: 1 0 $slide-width;
+    scroll-snap-align: start;
+
+    &:nth-child(2n + 1) {
+      background: darkgray;
+    }
+  }
+}
