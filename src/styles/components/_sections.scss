@@ -54,9 +54,23 @@ section {
     color: map-get($theme-foreground, text);
 
     .content {
-      @media screen and (min-width: 1024px) {
-        width: 40vw;
+      h2 {
+        &::after {
+          background: linear-gradient(to right, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
+        }
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .content {
+        width: 30vw;
         transform: translate(-5%, -50%);
+      }
+
+      h2 {
+        &::after {
+          width: 52vw;
+          background: linear-gradient(to right, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
+        }
       }
     }
   }
@@ -65,9 +79,23 @@ section {
     color: map-get($theme-foreground, text);
 
     .content {
-      @media screen and (min-width: 1024px) {
-        width: 40vw;
+      // h2 {
+      //   &::after {
+      //   }
+      // }
+    }
+    @media screen and (min-width: 1024px) {
+      .content {
+        width: 30vw;
         transform: translate(-105%, -50%);
+      }
+
+      h2 {
+        &::after {
+          width: 33vw;
+          transform: translateX(-52%);
+          background: linear-gradient(to left, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
+        }
       }
     }
   }
