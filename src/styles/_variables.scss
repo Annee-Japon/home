@@ -22,6 +22,9 @@ $theme-foreground: (
 );
 
 $breakpoints: (
+  xsmall: (
+    max-width: 320px
+  ),
   m: (
     min-width: 1024px
   )

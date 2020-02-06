@@ -4,9 +4,12 @@
 header {
   @extend %full-height;
   color: map-get($theme-foreground, text-contrast);
+  background: map-get($theme-background, background);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 
   h1 {
     font-weight: normal;

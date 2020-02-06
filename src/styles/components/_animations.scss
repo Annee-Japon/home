@@ -44,6 +44,10 @@ body:not(.no-animation) {
           width: 90vw;
           transition: all 1000ms 1000ms ease-in-out;
 
+          @media screen and #{map-get($breakpoints, xsmall)} {
+            width: 80vw;
+          }
+
           @media screen and #{map-get($breakpoints, m)} {
             width: 45vw;
           }
@@ -61,7 +65,11 @@ body:not(.no-animation) {
   .group-fb {
     h2 {
       opacity: 0;
-      transform: translateX(100%);
+      transform: translateX(-100%);
+
+      @media screen and #{map-get($breakpoints, m)} {
+        transform: translateX(100%);
+      }
 
       &::after {
         opacity: 0;
@@ -84,6 +92,10 @@ body:not(.no-animation) {
           opacity: 1;
           width: 90vw;
           transition: all 1000ms 1000ms ease-in-out;
+
+          @media screen and #{map-get($breakpoints, xsmall)} {
+            width: 80vw;
+          }
 
           @media screen and #{map-get($breakpoints, m)} {
             width: 30vw;
@@ -125,6 +137,10 @@ body:not(.no-animation) {
           opacity: 1;
           width: 90vw;
           transition: all 1000ms 1000ms ease-in-out;
+
+          @media screen and #{map-get($breakpoints, xsmall)} {
+            width: 80vw;
+          }
 
           @media screen and #{map-get($breakpoints, m)} {
             width: 50vw;

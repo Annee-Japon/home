@@ -6,4 +6,9 @@ footer {
   padding: $spacing * 2;
   color: map-get($theme-foreground, text);
   height: 50vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: -1;
 }
