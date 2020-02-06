@@ -6,16 +6,16 @@ section {
   position: relative;
 
   h2 {
-    font-size: $default-fz * 2;
+    font-size: $section-title-fz;
     font-weight: normal;
-    position: relative;
+    position: absolute;
 
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 90%;
+      width: 90vw;
       height: 1px;
       background: black;
       transform: translateX(-5%);
@@ -29,18 +29,23 @@ section {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 80vw;
+    box-sizing: border-box;
 
     h2::first-letter {
       font-size: $default-fz * 3;
       color: map-get($theme-foreground, text-contrast);
     }
+
+    @media screen and #{map-get($breakpoints, m)} {
+      width: 42vw;
+    }
+  }
+
+  .inner-content {
+    margin-top: calc(#{$spacing * 7} + #{$section-title-fz});
   }
 
   p {
-    &:first-of-type {
-      margin-top: $spacing * 6;
-    }
-
     text-indent: 1.5rem;
 
     &::first-letter {
@@ -60,9 +65,8 @@ section {
         }
       }
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and #{map-get($breakpoints, m)} {
       .content {
-        width: 30vw;
         transform: translate(-5%, -50%);
       }
 
@@ -85,15 +89,16 @@ section {
         }
       }
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and #{map-get($breakpoints, m)} {
       .content {
-        width: 30vw;
-        transform: translate(-105%, -50%);
+        transform: translate(-80%, -50%);
 
         h2 {
           &::after {
-            width: 33vw;
-            transform: translateX(-52%);
+            right: 0;
+            left: unset;
+            transform: translateX(5%);
+            width: 30vw;
             background: linear-gradient(to left, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
           }
         }
@@ -103,16 +108,21 @@ section {
 
   &.gallery {
     .content {
+      width: 100%;
+
       h2 {
+        left: 25vw;
+
         &::after {
           background: linear-gradient(to right, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
         }
       }
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and #{map-get($breakpoints, m)} {
       .content {
         h2 {
           &::after {
+            width: 50vw;
             background: linear-gradient(to right, rgba(42, 42, 42, 1), rgba(42, 42, 42, 0));
           }
         }

@@ -1,0 +1,142 @@
+@import "../variables";
+@import "../helpers";
+
+body:not(.no-animation) {
+  header {
+    h1 {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    &.animate {
+      h1 {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1000ms ease-in-out;
+      }
+    }
+  }
+
+  .organization {
+    h2 {
+      opacity: 0;
+      transform: translateX(-100%);
+
+      &::after {
+        opacity: 0;
+        width: 0;
+      }
+    }
+
+    .inner-content {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+
+    &.animate {
+      h2 {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1000ms ease-in-out;
+
+        &::after {
+          opacity: 1;
+          width: 90vw;
+          transition: all 1000ms 1000ms ease-in-out;
+
+          @media screen and #{map-get($breakpoints, m)} {
+            width: 45vw;
+          }
+        }
+      }
+
+      .inner-content {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1000ms 500ms ease-in-out;
+      }
+    }
+  }
+
+  .group-fb {
+    h2 {
+      opacity: 0;
+      transform: translateX(100%);
+
+      &::after {
+        opacity: 0;
+        width: 0;
+      }
+    }
+
+    .inner-content {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+
+    &.animate {
+      h2 {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: all 1000ms ease-in-out;
+
+        &::after {
+          opacity: 1;
+          width: 90vw;
+          transition: all 1000ms 1000ms ease-in-out;
+
+          @media screen and #{map-get($breakpoints, m)} {
+            width: 30vw;
+          }
+        }
+      }
+
+      .inner-content {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1000ms 500ms ease-in-out;
+      }
+    }
+  }
+
+  .gallery {
+    h2 {
+      opacity: 0;
+      transform: translateY(-100%);
+
+      &::after {
+        opacity: 0;
+        width: 0;
+      }
+    }
+
+    .inner-content {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+
+    &.animate {
+      h2 {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1000ms ease-in-out;
+
+        &::after {
+          opacity: 1;
+          width: 90vw;
+          transition: all 1000ms 1000ms ease-in-out;
+
+          @media screen and #{map-get($breakpoints, m)} {
+            width: 50vw;
+          }
+        }
+      }
+
+      .inner-content {
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1000ms 500ms ease-in-out;
+      }
+    }
+  }
+}

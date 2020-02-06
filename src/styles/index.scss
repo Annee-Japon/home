@@ -3,8 +3,10 @@
 @import "./heading";
 
 @import "./components/header";
+@import "./components/footer";
 @import "./components/sections";
 @import "./components/carousel";
+@import "./components/animations";
 
 html {
   font-size: 10px;
@@ -24,6 +26,6 @@ body {
   scroll-snap-type: y proximity;
 
   > * {
-    scroll-snap-align: end;
+    scroll-snap-align: center;
   }
 }

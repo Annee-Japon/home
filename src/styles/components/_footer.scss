@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../helpers";
+
+footer {
+  background: map-get($theme-background, footer);
+  padding: $spacing * 2;
+  color: map-get($theme-foreground, text);
+  height: 50vh;
+}

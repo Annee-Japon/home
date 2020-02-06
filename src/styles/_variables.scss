@@ -6,15 +6,23 @@ $c-secondary: #7c3e9b;
 $spacing: 8px;
 
 $default-fz: 1.6rem;
+$section-title-fz: $default-fz * 2;
 
 $theme-background: (
   primary-bg: $c-primary,
   secondary-bg: $c-secondary,
-  background: rgb(220, 220, 220)
+  background: rgb(220, 220, 220),
+  footer: rgb(42, 42, 42)
 );
 
 $theme-foreground: (
   text: rgb(220, 220, 220),
   text-shiny: rgb(241, 241, 241),
   text-contrast: rgb(42, 42, 42)
+);
+
+$breakpoints: (
+  m: (
+    min-width: 1024px
+  )
 );
