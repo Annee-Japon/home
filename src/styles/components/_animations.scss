@@ -41,7 +41,7 @@ body:not(.no-animation) {
 
         &::after {
           opacity: 1;
-          width: 90vw;
+          width: 85vw;
           transition: all 1000ms 1000ms ease-in-out;
 
           @media screen and #{map-get($breakpoints, xsmall)} {
@@ -90,7 +90,7 @@ body:not(.no-animation) {
 
         &::after {
           opacity: 1;
-          width: 90vw;
+          width: 85vw;
           transition: all 1000ms 1000ms ease-in-out;
 
           @media screen and #{map-get($breakpoints, xsmall)} {
@@ -135,7 +135,7 @@ body:not(.no-animation) {
 
         &::after {
           opacity: 1;
-          width: 90vw;
+          width: 85vw;
           transition: all 1000ms 1000ms ease-in-out;
 
           @media screen and #{map-get($breakpoints, xsmall)} {
