@@ -1,0 +1,102 @@
+@import "../variables";
+@import "../helpers";
+
+.lang-switcher {
+  $btn-width: 50px;
+  $btn-height: 32px;
+  $parent-padding: 2px;
+
+  position: fixed;
+  top: $spacing * 2;
+  right: $spacing * 2;
+  z-index: 4;
+  border-radius: $shape;
+  padding: $parent-padding;
+  background: map-get($theme-background, lang-open);
+  overflow: hidden;
+  box-sizing: border-box;
+  width: $btn-width * 3 + $spacing * 2 + $parent-padding * 2;
+  height: $btn-height + $parent-padding * 2;
+  transition: all 250ms linear;
+
+  @media screen and #{map-get($breakpoints, m)} {
+    top: $spacing * 4;
+    right: $spacing * 6;
+  }
+
+  .no-i18n & {
+    display: none;
+  }
+
+  .actions {
+    position: relative;
+  }
+
+  button {
+    padding: $spacing $spacing * 2;
+    border: none;
+    border-radius: $shape;
+    background: transparent;
+    box-sizing: border-box;
+    transition: all 250ms linear;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    width: $btn-width;
+    height: $btn-height;
+    color: map-get($theme-foreground, text);
+
+    &:nth-child(1) {
+      left: 0;
+    }
+    &:nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:nth-child(3) {
+      right: 0;
+    }
+
+    &:focus {
+      outline: none;
+      background: rgba(map-get($theme-background, lang), 0.2);
+    }
+
+    &.active {
+      background: map-get($theme-background, lang);
+      z-index: 2;
+    }
+  }
+
+  [data-lang-switcher-open] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+    span {
+      position: absolute;
+      top: -9999px;
+    }
+  }
+
+  &.closed {
+    width: 54px;
+    background: map-get($theme-background, lang);
+
+    [data-lang-switcher-open] {
+      display: block;
+    }
+
+    .actions {
+      button {
+        &:not(.active) {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

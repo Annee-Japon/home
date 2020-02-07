@@ -10,13 +10,21 @@
 
 <body>
   <div class="container">
+    <div class="lang-switcher closed" data-lang-switcher>
+      <div class="actions">
+        <button data-lang="fr">Fr</button>
+        <button data-lang="jp">Jp</button>
+        <button data-lang="en">En</button>
+      </div>
+      <button data-lang-switcher-open><span>Open</span></button>
+    </div>
     <header data-animate>
-      <h1>Annee Japon</h1>
+      <h1 data-i18n="header.title">Année Japon</h1>
     </header>
     <section class="organization" data-animate>
       <div class="content">
-        <h2>Le club</h2>
-        <div class="inner-content">
+        <h2 data-i18n="organization.title">Le club</h2>
+        <div class="inner-content" data-i18n="organization.content">
           <p>
             Bienvenue sur le site officiel de l’association Année Japon !
           </p>
@@ -32,8 +40,8 @@
     </section>
     <section class="group-fb" data-animate>
       <div class="content">
-        <h2>Nous rencontrer</h2>
-        <div class="inner-content">
+        <h2 data-i18n="group-fb.title">Nous rencontrer</h2>
+        <div class="inner-content" data-i18n="group-fb.content">
           <p>
             Pour se rencontrer, ou tout simplement poser des questions rejoignez-nous sur Facebook !
           </p>
@@ -52,7 +60,7 @@
     </section>
     <section class="gallery" data-animate>
       <div class="content">
-        <h2>Gallerie</h2>
+        <h2 data-i18n="gallery.title">Gallerie</h2>
         <div class="inner-content">
           <div class="carousel">
             <div class="slide"></div>

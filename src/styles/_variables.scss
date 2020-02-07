@@ -4,6 +4,7 @@ $c-primary: #28607e;
 $c-secondary: #7c3e9b;
 
 $spacing: 8px;
+$shape: 16px;
 
 $default-fz: 1.6rem;
 $section-title-fz: $default-fz * 2;
@@ -12,13 +13,16 @@ $theme-background: (
   primary-bg: $c-primary,
   secondary-bg: $c-secondary,
   background: rgb(220, 220, 220),
-  footer: rgb(42, 42, 42)
+  footer: rgb(42, 42, 42),
+  lang: rgb(173, 60, 60),
+  lang-open: rgb(42, 42, 42)
 );
 
 $theme-foreground: (
   text: rgb(220, 220, 220),
   text-shiny: rgb(241, 241, 241),
-  text-contrast: rgb(42, 42, 42)
+  text-contrast: rgb(42, 42, 42),
+  outline: rgb(42, 42, 42)
 );
 
 $breakpoints: (

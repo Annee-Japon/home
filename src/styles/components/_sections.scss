@@ -116,8 +116,6 @@ section {
   }
 
   &.gallery {
-    margin-bottom: 50vh;
-
     &::before {
       content: "";
       background: map-get($theme-background, background);

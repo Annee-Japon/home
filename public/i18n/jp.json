@@ -1,0 +1,24 @@
+{
+  "header": {
+    "title": "Année Japon"
+  },
+  "organization": {
+    "title": "Lorem Ipsum",
+    "content": [
+      "lorem ipsum dolor sit amet",
+      "Crée à l’occasion de “l’année du Japon en France” en 1997, nous proposons aux Grenoblois passionnés du Japon et aux Japonais vivants à Grenoble de se rencontrer afin de favoriser l’échange culturel.",
+      "Si vous souhaitez échanger en français, ou en japonais, rejoignez-nous, vous êtes tous bienvenues !"
+    ]
+  },
+  "group-fb": {
+    "title": "Nous rencontrer",
+    "content": [
+      "Pour se rencontrer, ou tout simplement poser des questions rejoignez-nous sur Facebook !",
+      "Répondez à trois questions et vous serez des nôtres ;-)",
+      "Nous organisons des rendez vous hebdomadaires chaleureux, mais aussi des sorties cinéma sur le thème du Japon, des sorties restaurants pour discuter autour de bols de ramen, ou même des barbecues pour partager ensemble la gastronomie française et japonaise !"
+    ]
+  },
+  "gallery": {
+    "title": "Gallerie"
+  }
+}
