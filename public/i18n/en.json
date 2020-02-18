@@ -20,5 +20,17 @@
   },
   "gallery": {
     "title": "Gallery"
+  },
+  "activity": {
+    "title": "Our activities",
+    "content": [
+      "Exchange of languages and regular meeting on Wednesdays",
+      "Various seminars: on the analysis of society from the point of view of cognitive science, digital humanities and international law, diseases of language disorders",
+      "Reception of Japanese interns and students in Grenoble",
+      "Sending French trainees to Japan",
+      "Bilateral translation of French, English and Japanese documents",
+      "Preparation of a Fr-Jp radio station",
+      "Game night"
+    ]
   }
 }

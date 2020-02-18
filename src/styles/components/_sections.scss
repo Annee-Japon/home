@@ -63,10 +63,7 @@ section {
     }
   }
 
-  &.organization {
-    background: map-get($theme-background, secondary-bg);
-    color: map-get($theme-foreground, text);
-
+  &.right {
     .content {
       h2 {
         &::after {
@@ -87,10 +84,8 @@ section {
       }
     }
   }
-  &.group-fb {
-    background: map-get($theme-background, primary-bg);
-    color: map-get($theme-foreground, text);
 
+  &.left {
     .content {
       h2 {
         &::after {
@@ -115,7 +110,73 @@ section {
     }
   }
 
-  &.gallery {
+  &.center {
+    .content {
+      width: 100%;
+
+      h2 {
+        left: 50vw;
+
+        &::after {
+          width: 50vw;
+          background: linear-gradient(to right, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
+        }
+      }
+    }
+    @media screen and #{map-get($breakpoints, m)} {
+      .content {
+        h2 {
+          &::after {
+            background: linear-gradient(to right, rgba(42, 42, 42, 1), rgba(42, 42, 42, 0));
+          }
+        }
+      }
+    }
+  }
+
+  &.organization {
+    background: map-get($theme-background, secondary-bg);
+    color: map-get($theme-foreground, text);
+  }
+
+  &.group-fb {
+    background: map-get($theme-background, primary-bg);
+    color: map-get($theme-foreground, text);
+  }
+
+  &.activity {
+    min-height: 100vh;
+    height: auto;
+
+    .content {
+      position: static;
+      top: 0;
+      left: 0;
+      transform: none;
+
+      h2 {
+        padding-top: $spacing * 9;
+        width: 70%;
+      }
+    }
+
+    .inner-content {
+      margin-top: calc(#{$spacing * 17} + #{$section-title-fz});
+    }
+
+    @media screen and #{map-get($breakpoints, m)} {
+      .content {
+        width: 75vw;
+        margin: auto;
+      }
+      .inner-content {
+        width: 100%;
+        margin-top: calc(#{$spacing * 23} + #{$section-title-fz});
+      }
+    }
+  }
+
+  &:last-of-type {
     &::before {
       content: "";
       background: map-get($theme-background, background);
@@ -137,28 +198,6 @@ section {
       background: transparent;
       box-shadow: 0 0 64px rgba(0, 0, 0, 0.8);
       z-index: -1;
-    }
-
-    .content {
-      h2 {
-        &::after {
-          background: linear-gradient(to right, rgba(42, 42, 42, 1) 50%, rgba(42, 42, 42, 0));
-        }
-      }
-    }
-    @media screen and #{map-get($breakpoints, m)} {
-      .content {
-        width: 100%;
-
-        h2 {
-          left: 25vw;
-
-          &::after {
-            width: 50vw;
-            background: linear-gradient(to right, rgba(42, 42, 42, 1), rgba(42, 42, 42, 0));
-          }
-        }
-      }
     }
   }
 }

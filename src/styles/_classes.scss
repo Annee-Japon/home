@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./helpers";
+
+.layout {
+  display: flex;
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.jc-center {
+    justify-content: center;
+  }
+
+  &.jc-around {
+    justify-content: space-around;
+  }
+  &.jc-between {
+    justify-content: space-between;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  > .flex {
+    flex: 1;
+  }
+}
+
+.square-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  > li {
+    margin: $spacing 0;
+    box-sizing: border-box;
+    padding: $spacing * 3;
+    padding-top: $spacing * 12;
+    background: shade(map-get($theme-background, background), 5%);
+    flex: 1 0 100%;
+
+    @media screen and #{map-get($breakpoints, m)} {
+      margin: $spacing;
+      flex: 1 0 25%;
+    }
+  }
+}

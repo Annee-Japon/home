@@ -19,7 +19,7 @@ body:not(.no-animation) {
     }
   }
 
-  .organization {
+  section.right {
     h2 {
       opacity: 0;
       transform: translateX(-100%);
@@ -64,7 +64,7 @@ body:not(.no-animation) {
     }
   }
 
-  .group-fb {
+  section.left {
     h2 {
       opacity: 0;
       transform: translateX(-100%);
@@ -113,10 +113,10 @@ body:not(.no-animation) {
     }
   }
 
-  .gallery {
+  section.center {
     h2 {
       opacity: 0;
-      transform: translateY(-100%);
+      transform: translate(-50%, -100%);
 
       &::after {
         opacity: 0;
@@ -132,12 +132,12 @@ body:not(.no-animation) {
     &.animate {
       h2 {
         opacity: 1;
-        transform: translateY(0%);
+        transform: translate(-50%, 0%);
         transition: all $duration ease-in-out;
 
         &::after {
           opacity: 1;
-          width: 85vw;
+          width: 70vw;
           transition: all $duration $duration ease-in-out;
 
           @media screen and #{map-get($breakpoints, xsmall)} {

@@ -41,6 +41,9 @@ export default () => {
   const langSwitcherOpen = document.querySelector('[data-lang-switcher-open]');
   langSwitcherOpen.addEventListener('click', () => {
     langSwitcher.classList.remove('closed');
+    langSwitcherButtons.forEach((elt) => {
+      elt.setAttribute('tabindex', 0);
+    });
   });
 
   const langSwitcherButtons = document.querySelectorAll('[data-lang]');

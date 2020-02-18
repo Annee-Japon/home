@@ -9,7 +9,7 @@ export default () => {
             entry.target.classList.add('animate');
           }
         });
-      }, { root: null, threshold: [0.5] });
+      }, { root: null, threshold: [0.1] });
       observer.observe(element);
     });
   } else {

@@ -1,6 +1,7 @@
 @import "./variables";
 
 @import "./heading";
+@import "./classes";
 
 @import "./components/header";
 @import "./components/footer";
@@ -27,6 +28,6 @@ body {
   scroll-snap-type: y proximity;
 
   > * {
-    scroll-snap-align: center;
+    scroll-snap-align: start end;
   }
 }

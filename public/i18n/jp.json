@@ -20,5 +20,17 @@
   },
   "gallery": {
     "title": "Gallerie"
+  },
+  "activity": {
+    "title": "Nos activités",
+    "content": [
+      "Echange des langues et réunion régulière le mercredis",
+      "Séminaires divers : sur l'analyse de la société au point de vue de la science cognitive, les humanités numériques et la loi internationale, les maladies aux troubles du langage",
+      "Accueil de stagiaires et d’étudiants japonais à Grenoble",
+      "Envoi de stagiaires français au Japon",
+      "Traduction bilatérale de documents français, anglais et japonais",
+      "Préparation d’une station de radio Fra-Jap",
+      "Soirée jeux"
+    ]
   }
 }
