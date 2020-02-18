@@ -5,15 +5,15 @@ $duration: 500ms;
 
 body:not(.no-animation) {
   header {
-    h1 {
+    .wrapper {
       opacity: 0;
       transform: translateY(-150%);
     }
 
     &.animate {
-      h1 {
+      .wrapper {
         opacity: 1;
-        transform: translateY(-50%);
+        transform: translateY(0%);
         transition: all $duration * 2 ease-in-out;
       }
     }
