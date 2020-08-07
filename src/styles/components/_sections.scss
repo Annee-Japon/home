@@ -167,11 +167,46 @@ section {
     @media screen and #{map-get($breakpoints, m)} {
       .content {
         width: 75vw;
+        height: 100vh;
         margin: auto;
       }
       .inner-content {
         width: 100%;
         margin-top: calc(#{$spacing * 23} + #{$section-title-fz});
+        height: calc(100% - (#{$spacing * 23} + #{$section-title-fz}));
+
+        ul {
+          height: 90%;
+
+          li {
+            color: map-get($theme-foreground, text);
+
+            &:nth-child(1n) {
+              background: map-get($theme-background, footer);
+            }
+            &:nth-child(2n) {
+              background: map-get($theme-background, secondary-bg);
+            }
+            &:nth-child(3n) {
+              background: map-get($theme-background, lang);
+            }
+            &:nth-child(4n) {
+              background: map-get($theme-background, lang);
+            }
+            &:nth-child(5n) {
+              background: map-get($theme-background, primary-bg);
+            }
+            &:nth-child(6n) {
+              background: map-get($theme-background, secondary-bg);
+            }
+            &:nth-child(7n) {
+              background: map-get($theme-background, primary-bg);
+            }
+            &:nth-child(8n) {
+              background: map-get($theme-background, footer);
+            }
+          }
+        }
       }
     }
   }

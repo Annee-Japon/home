@@ -25,9 +25,12 @@ body {
 .container {
   overflow-y: auto;
   height: 100vh;
-  scroll-snap-type: y proximity;
 
-  > * {
-    scroll-snap-align: start end;
+  &.scroll-snap-enable {
+    scroll-snap-type: y proximity;
+
+    > * {
+      scroll-snap-align: start end;
+    }
   }
 }
