@@ -3,34 +3,35 @@
     "title": "Année Japon"
   },
   "organization": {
-    "title": "Lorem Ipsum",
+    "title": "クラブ",
     "content": [
-      "lorem ipsum dolor sit amet",
-      "Crée à l’occasion de “l’année du Japon en France” en 1997, nous proposons aux Grenoblois passionnés du Japon et aux Japonais vivants à Grenoble de se rencontrer afin de favoriser l’échange culturel.",
-      "Si vous souhaitez échanger en français, ou en japonais, rejoignez-nous, vous êtes tous bienvenues !"
+      "アンネ・ジャポン（日本年）の協会のオフィシャルなウェブサイトへようこそ !",
+      "1997年の「フランスの日本年」を契機に作成されたから、日本好きグルノーブルの住人とグルノーブルに住む日本人に、文化交流を促 進するために提案します。",
+      "フランス語または日本語で話ご希望の場合は、みんなでさんお気軽にご参加ください !"
     ]
   },
   "group-fb": {
-    "title": "Nous rencontrer",
+    "title": "私たちに会う",
     "content": [
-      "Pour se rencontrer, ou tout simplement poser des questions rejoignez-nous sur Facebook !",
-      "Répondez à trois questions et vous serez des nôtres ;-)",
-      "Nous organisons des rendez vous hebdomadaires chaleureux, mais aussi des sorties cinéma sur le thème du Japon, des sorties restaurants pour discuter autour de bols de ramen, ou même des barbecues pour partager ensemble la gastronomie française et japonaise !"
+      "私たちに会ったり、質問したりするには、Facebookに参加してください !",
+      "三つの質問に答えるだけで、クラブのメンバーにすぐになります(^.^)",
+      "毎週の暖かいミーティング、日本に関連した映画の外出、ラーメンの周りで議論するレストランの外出も、またはフランス料理と日本料理への恋を一緒に共有するバーベキューイベント計画しています ！"
     ]
   },
   "gallery": {
-    "title": "Gallerie"
+    "title": "ギャラリー"
   },
   "activity": {
-    "title": "Nos activités",
+    "title": "私たちの活動",
     "content": [
-      "Echange des langues et réunion régulière le mercredis",
-      "Séminaires divers : sur l'analyse de la société au point de vue de la science cognitive, les humanités numériques et la loi internationale, les maladies aux troubles du langage",
-      "Accueil de stagiaires et d’étudiants japonais à Grenoble",
-      "Envoi de stagiaires français au Japon",
-      "Traduction bilatérale de documents français, anglais et japonais",
-      "Préparation d’une station de radio Fra-Jap",
-      "Soirée jeux"
+      "言語交流",
+      "毎週の水曜日のミーティング",
+      "ゲームの夜",
+      "日本人のインターンとの学生がグルノーブルで歓迎する",
+      "日本で派遣されるフランス人インターン",
+      "フランス語、英語、日本語文書の相互翻訳",
+      "日仏のラジオ局を作る",
+      "様々のセミナー：<br>認知科学の見地からの社会の分析、<br>ニューメリック人文科学と国際法、<br>言語障害の病気"
     ]
   }
 }

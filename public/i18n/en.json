@@ -5,17 +5,17 @@
   "organization": {
     "title": "The club",
     "content": [
-      "Welcome to the official site of the Year Japan association!",
-      "Founded on the occasion of “the year of Japan in France” in 1997, we invite Grenoble-native fans of Japan and Japanese people living in Grenoble to meet in order to promote cultural exchange.",
-      "If you want to exchange in French, or in Japanese, join us, you are all welcome!"
+      "Welcome to the official website of the association Année Japon (Japan Year)!",
+      "Created on the occasion of “The year of Japan in France” in 1997, we propose to the inhabitants of Grenoble that are passionate about Japan ans to the Japanese people living in Grenoble to meet together to encourage cultural exchange.",
+      "If you wish to speak in French or Japanese, feel free to join us, you are all welcome!"
     ]
   },
   "group-fb": {
-    "title": "Meet us",
+    "title": "Meeting us",
     "content": [
-      "To meet, or just ask questions, join us on Facebook!",
-      "Answer three questions and you will be with us ;-)",
-      "We organize warm weekly meetings, but also cinema outings on the theme of Japan, restaurant outings to chat around ramen bowls, or even barbecues to share French and Japanese gastronomy together!"
+      "To meet us or just to ask questions, please join us on Facebook!",
+      "Just fill in the three questions and you will be part of the group ;-)",
+      "We also plan warm weekly meetings, cinema outings related to Japan, restaurant outings to discuss around a bowl of ramen noodle or even barbecue events to share together our love for French and Japanese cuisine!"
     ]
   },
   "gallery": {
@@ -24,13 +24,14 @@
   "activity": {
     "title": "Our activities",
     "content": [
-      "Exchange of languages and regular meeting on Wednesdays",
-      "Various seminars: on the analysis of society from the point of view of cognitive science, digital humanities and international law, diseases of language disorders",
-      "Reception of Japanese interns and students in Grenoble",
-      "Sending French trainees to Japan",
+      "Linguistic exchange",
+      "Weekly meeting on Wednesday",
+      "Game evening",
+      "Japanese interns and students welcoming in Grenoble",
+      "French interns sending in Japan",
       "Bilateral translation of French, English and Japanese documents",
-      "Preparation of a Fr-Jp radio station",
-      "Game night"
+      "Making of a French-Japanese radio station",
+      "Various seminars:<br> on the analysis of society from the point of view of cognitive science,<br> the numeric humanities and the international law,<br> diseases of speech disorders"
     ]
   }
 }
