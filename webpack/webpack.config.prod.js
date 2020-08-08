@@ -18,7 +18,7 @@ module.exports = merge(common, {
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'bundle.css'
+      filename: 'style.[contenthash].css'
     })
   ],
   module: {
@@ -30,7 +30,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.s?css/i,
-        use : [
+        use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
