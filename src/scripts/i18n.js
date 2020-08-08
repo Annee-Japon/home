@@ -10,7 +10,7 @@ if (!i18nIsEnabled) {
 export let currentLocale = localStorage.getItem('i18n-selected') || 'fr';
 
 export function getTranslationFile(locale) {
-  return fetch(`${path}/${locale}.json`).then((response) => response.json());
+  return fetch(`${path}/${locale}.json`, { cache: 'no-cache' }).then((response) => response.json());
 }
 
 export function getTranslation(translation, path) {
