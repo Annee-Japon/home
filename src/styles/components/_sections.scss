@@ -142,6 +142,12 @@ section {
   &.group-fb {
     background: map-get($theme-background, primary-bg);
     color: map-get($theme-foreground, text);
+
+    .fb-group {
+      margin-top: $spacing * 8;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &.activity {

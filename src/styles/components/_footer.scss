@@ -3,9 +3,12 @@
 
 footer {
   background: map-get($theme-background, footer);
+  background-image: url("/public/images/footer-2-uhd-tiny.png"), url("/public/images/footer-1-uhd-tiny.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 31%, contain;
+  background-position: top left, top right;
   padding: $spacing * 13 $spacing * 2;
   color: map-get($theme-foreground, text);
-  // height: 50vh;
   box-sizing: border-box;
 
   p {

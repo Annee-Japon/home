@@ -4,7 +4,9 @@
 header {
   @extend %full-height;
   color: map-get($theme-foreground, text-contrast);
-  background: map-get($theme-background, background);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,5 +21,13 @@ header {
     img {
       width: 150px;
     }
+  }
+
+  @media screen and (orientation: portrait) {
+    background-image: url("/public/images/annee-japon-header-portrait-uhd-tiny.jpg");
+  }
+
+  @media screen and (orientation: landscape) {
+    background-image: url("/public/images/annee-japon-header-landscape-uhd-tiny.jpg");
   }
 }
