@@ -5,13 +5,57 @@ footer {
   background: map-get($theme-background, footer);
   background-image: url("/public/images/footer-2-uhd-tiny.png"), url("/public/images/footer-1-uhd-tiny.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 31%, contain;
-  background-position: top left, top right;
+  background-size: 60%, 60%;
+  background-position: bottom left, top right;
   padding: $spacing * 13 $spacing * 2;
   color: map-get($theme-foreground, text);
   box-sizing: border-box;
+  transition: all 330ms;
 
   p {
     margin: $spacing;
+  }
+
+  @media screen and #{map-get($breakpoints, small)} {
+    background-size: 31%, 50%;
+  }
+
+  @media screen and #{map-get($breakpoints, m)} {
+    background-size: 31%, contain;
+    background-position: top left, top right;
+  }
+
+  .contact {
+    margin-top: $spacing * 8;
+
+    @media screen and #{map-get($breakpoints, m)} {
+      margin-top: 0;
+    }
+  }
+
+  .contact-link {
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    padding: $spacing * 2;
+    background: map-get($theme-background, lang);
+    border: 2px solid map-get($theme-background, lang-open);
+    transition: all 330ms ease-in;
+    border-radius: $shape / 2;
+    box-sizing: border-box;
+    font-size: $default-fz + 0.4rem;
+
+    &,
+    &:visited,
+    &:link {
+      color: map-get($theme-foreground, text);
+      text-decoration: none;
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+      background: map-get($theme-background, lang-open);
+      border: 2px solid map-get($theme-background, lang);
+    }
   }
 }

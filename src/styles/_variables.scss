@@ -15,21 +15,37 @@ $theme-background: (
   background: rgb(220, 220, 220),
   footer: rgb(42, 42, 42),
   lang: rgb(173, 60, 60),
-  lang-open: rgb(42, 42, 42)
+  lang-open: rgb(42, 42, 42),
 );
 
 $theme-foreground: (
   text: rgb(220, 220, 220),
   text-shiny: rgb(241, 241, 241),
   text-contrast: rgb(42, 42, 42),
-  outline: rgb(42, 42, 42)
+  outline: rgb(42, 42, 42),
 );
 
 $breakpoints: (
   xsmall: (
-    max-width: 320px
+    max-width: 320px,
+  ),
+  small: (
+    min-width: 768px,
   ),
   m: (
-    min-width: 1024px
-  )
+    min-width: 1024px,
+  ),
+  max-small: (
+    max-width: 768px,
+  ),
+  max-m: (
+    max-width: 1024px,
+  ),
 );
+
+$organization-first-left: 15%;
+$organization-middle-left: 28%;
+$organization-last-left: 44%;
+$organization-first-right: 85%;
+$organization-middle-right: 82%;
+$organization-last-right: 64%;

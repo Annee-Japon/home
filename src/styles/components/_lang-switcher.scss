@@ -45,6 +45,7 @@
     width: $btn-width;
     height: $btn-height;
     color: map-get($theme-foreground, text);
+    cursor: pointer;
 
     &:nth-child(1) {
       left: 0;

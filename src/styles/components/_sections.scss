@@ -7,46 +7,113 @@ section {
   z-index: 1;
 
   h2 {
-    font-size: $section-title-fz;
+    font-size: $section-title-fz - 0.2rem;
     font-weight: normal;
     position: absolute;
 
-    @media screen and #{map-get($breakpoints, xsmall)} {
-      font-size: $section-title-fz - 0.2rem;
+    @media screen and #{map-get($breakpoints, small)} {
+      font-size: $section-title-fz;
+    }
+  }
+
+  .img-deco {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    &.first {
+      width: 290px;
+      left: $organization-first-left;
+      z-index: 0;
+    }
+
+    &.middle {
+      width: 330px;
+      left: $organization-middle-left;
+      z-index: 1;
+    }
+
+    &.last {
+      left: $organization-last-left;
+      z-index: 2;
+    }
+
+    @media screen and #{map-get($breakpoints, m)} {
+      display: initial;
+    }
+  }
+
+  &.left {
+    &.first {
+      left: $organization-first-right;
+    }
+
+    &.middle {
+      left: $organization-middle-right;
+    }
+
+    &.last {
+      left: $organization-last-right;
+    }
+  }
+
+  .content-deco {
+    &::before,
+    &::after {
+      position: absolute;
+      color: map-get($theme-foreground, outline);
+      font-size: 25rem;
+    }
+    &::before {
+      content: "「";
+      top: 0;
+      left: 0;
+      transform: translate(-66%, -17%);
     }
 
     &::after {
-      content: "";
-      position: absolute;
+      content: "」";
       bottom: 0;
-      left: 0;
-      width: 85vw;
-      height: 1px;
-      background: black;
-      transform: translateX(-5%);
-
-      @media screen and #{map-get($breakpoints, xsmall)} {
-        width: 80vw;
-      }
+      right: 0;
+      transform: translate(66%, 27%);
     }
   }
 
   .content {
-    padding: $spacing * 2;
+    padding: $spacing * 4;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 80vw;
     box-sizing: border-box;
+    font-size: 1.4rem;
+    z-index: 4;
 
     h2::first-letter {
       font-size: $default-fz * 3;
       color: map-get($theme-foreground, text-contrast);
     }
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and #{map-get($breakpoints, small)} {
+      font-size: 1.6rem;
+    }
+
     @media screen and #{map-get($breakpoints, m)} {
       width: 42vw;
+      font-size: 1.8rem;
     }
   }
 
@@ -136,17 +203,64 @@ section {
 
   &.organization {
     background: map-get($theme-background, secondary-bg);
+    background-image: url("/public/images/japon-4-bg-landscape-uhd-3-tiny.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: map-get($theme-foreground, text);
+
+    .content::before {
+      background: map-get($theme-background, secondary-bg);
+    }
   }
 
   &.group-fb {
     background: map-get($theme-background, primary-bg);
     color: map-get($theme-foreground, text);
+    background-image: url("/public/images/grenoble-bg-landscape-1-uhd-tiny.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .fb-group {
-      margin-top: $spacing * 8;
-      display: flex;
-      justify-content: center;
+    .content::before {
+      background: map-get($theme-background, primary-bg);
+    }
+
+    .fb-link {
+      position: relative;
+      display: block;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      transition: all 330ms ease-in;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        border: 2px solid map-get($theme-foreground, text);
+      }
+
+      span {
+        position: absolute;
+        width: 0;
+        height: 0;
+        display: block;
+        opacity: 0;
+        overflow: hidden;
+      }
+
+      img {
+        width: 72px;
+        height: auto;
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        @media screen and #{map-get($breakpoints, xsmall)} {
+          width: 42px;
+        }
+      }
     }
   }
 
@@ -202,8 +316,9 @@ section {
     @media screen and #{map-get($breakpoints, m)} {
       .content {
         width: 75vw;
-        height: 100vh;
+        min-height: 100vh;
         margin: auto;
+        padding-bottom: 64px;
       }
       .inner-content {
         width: 100%;
