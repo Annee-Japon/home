@@ -65,20 +65,25 @@ section {
     &::after {
       position: absolute;
       color: map-get($theme-foreground, outline);
-      font-size: 25rem;
+      background-size: auto;
+      width: 50px;
+      height: 175px;
     }
+
     &::before {
-      content: "「";
-      top: 0;
-      left: 0;
-      transform: translate(-66%, -17%);
+      content: "";
+      background: url("/public/images/corner-top-left-2-tiny.png");
+      background-position: top left;
+      top: -$spacing;
+      left: -$spacing;
     }
 
     &::after {
-      content: "」";
-      bottom: 0;
-      right: 0;
-      transform: translate(66%, 27%);
+      content: "";
+      background: url("/public/images/corner-bottom-right-2-tiny.png");
+      background-position: bottom right;
+      bottom: -$spacing;
+      right: -$spacing;
     }
   }
 

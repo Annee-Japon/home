@@ -135,5 +135,10 @@ footer {
         }
       }
     }
+
+    margin-top: $spacing * 8;
+    @media screen and (#{map-get($breakpoints, m)}) {
+      margin-top: 0;
+    }
   }
 }

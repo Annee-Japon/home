@@ -113,11 +113,11 @@ body:not(.no-animation) {
       transition: all $duration $duration * 1.5 ease-in;
     }
     .content-deco::before {
-      transform: translate(-66%, -27%);
+      transform: translate(0, -10%);
     }
 
     .content-deco::after {
-      transform: translate(66%, 37%);
+      transform: translate(0, 10%);
     }
 
     &.animate {
@@ -127,12 +127,12 @@ body:not(.no-animation) {
 
       .content-deco::before {
         opacity: 1;
-        transform: translate(-66%, -17%);
+        transform: translate(0, 0);
       }
 
       .content-deco::after {
         opacity: 1;
-        transform: translate(66%, 27%);
+        transform: translate(0, 0);
       }
     }
 
