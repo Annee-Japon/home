@@ -36,5 +36,16 @@
   },
   "contact": {
     "link": "Contact us !"
+  },
+  "website": {
+    "text": "Website by:"
+  },
+  "footer": {
+    "description": "Association du Club de l’Année du Japon,<br> N° de Siret 794 387 431 Code :APE, <br> date de déclaration le 28 mai 1998, Loi 1901",
+    "headquarters": "Headquarters",
+    "board": "Composition of the board:",
+    "president": "President",
+    "vice": "Vice-president and treasurer",
+    "comm": "Communication"
   }
 }

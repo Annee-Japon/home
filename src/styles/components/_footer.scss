@@ -58,4 +58,82 @@ footer {
       border: 2px solid map-get($theme-background, lang);
     }
   }
+
+  .real {
+    .real-link {
+      display: block;
+      padding: 0;
+      position: relative;
+      transition: all 330ms ease-in-out;
+      -webkit-tap-highlight-color: transparent;
+
+      &,
+      &:visited,
+      &:link {
+        color: map-get($theme-foreground, text);
+      }
+
+      &:focus,
+      &:hover {
+        outline: none;
+
+        img {
+          background: map-get($theme-background, lang);
+          border-color: map-get($theme-background, lang);
+          border-radius: 50%;
+        }
+
+        span {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: -$spacing * 3;
+        opacity: 0;
+        transition: all 330ms ease-in-out;
+        transform: translateY(-20%);
+      }
+
+      img {
+        overflow: hidden;
+        width: auto;
+        height: 42px;
+        padding: 0;
+        display: block;
+        background: rgb(23, 23, 23);
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        transition: all 330ms ease-in-out;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      li:first-of-type {
+        .real-link img {
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+        }
+      }
+      li:last-of-type {
+        .real-link img {
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+        }
+      }
+
+      &:hover {
+        .real-link img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
