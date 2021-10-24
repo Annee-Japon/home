@@ -45,7 +45,8 @@
     "headquarters": "Siège principal du Club",
     "board": "Composition du bureau :",
     "president": "Présidente",
-    "vice": "Vice président et trésorier",
+    "vice": "Vice président",
+    "treasurer": "Trésorier",
     "comm": "Communication"
   }
 }

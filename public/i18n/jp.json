@@ -45,7 +45,8 @@
     "headquarters": "本部",
     "board": "重役会:",
     "president": "会長",
-    "vice": "副会長兼会計",
+    "vice": "副会長兼",
+    "treasurer": "会計",
     "comm": "コミュニケーション"
   }
 }

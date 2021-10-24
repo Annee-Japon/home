@@ -45,7 +45,8 @@
     "headquarters": "Headquarters",
     "board": "Composition of the board:",
     "president": "President",
-    "vice": "Vice-president and treasurer",
+    "vice": "Vice-president",
+    "treasurer": "Treasurer",
     "comm": "Communication"
   }
 }
