@@ -289,7 +289,7 @@ section {
       margin-top: calc(#{$spacing * 17} + #{$section-title-fz});
     }
 
-    li {
+    .square-list > li {
       color: map-get($theme-foreground, text);
 
       &:nth-child(1n) {
@@ -315,6 +315,9 @@ section {
       }
       &:nth-child(8n) {
         background: map-get($theme-background, footer);
+      }
+      &:nth-child(9n) {
+        background: map-get($theme-background, secondary-bg);
       }
     }
 
