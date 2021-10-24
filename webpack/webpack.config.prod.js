@@ -3,9 +3,8 @@ const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const common = require('./webpack.common.js');
 
-module.exports = merge(common, {
+module.exports = merge.merge(common, {
   mode: 'production',
-  devtool: 'source-map',
   stats: 'errors-only',
   bail: true,
   output: {
@@ -32,7 +31,7 @@ module.exports = merge(common, {
         test: /\.s?css/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {loader: 'css-loader', options: {url: false}},
           'sass-loader'
         ]
       }
