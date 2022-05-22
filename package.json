@@ -4,7 +4,7 @@
   "description": "Annee Japon static site web",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "start": "webpack-dev-server --config webpack/webpack.config.dev.js --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.4.0",
     "mini-css-extract-plugin": "^2.4.3",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "sass-loader": "^12.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.59.1",
